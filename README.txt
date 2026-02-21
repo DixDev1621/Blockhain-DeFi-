@@ -43,7 +43,7 @@ TROUBLESHOOTING:
 - If fetch to http://127.0.0.1:5000 fails, make sure the Python process is running and port 5000 is free.
 - If Live Server address is different from 127.0.0.1, the fetch still works (the backend accepts all origins).
 - If MetaMask refuses to connect, ensure the network is Polygon Amoy and the account has test POL for gas.
-- To change Router contract address: edit frontend/index.html and replace the address near the top (const contractAddress = "...").
+- To change Router contract address: edit frontend/index.html and replace the address near the top (const contractAddress = "..."). 
 
 NOTE:
 - The backend here is a simple demo "AI" engine using static rules. You can extend it to call Polygonscan APIs, ML models, or threat feeds for production.

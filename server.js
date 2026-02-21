@@ -28,8 +28,10 @@ app.use("/api/user", userRoutes);     // profile (protected)
 app.use("/api/projects", projectRoutes); // CRUD (protected + public)
 
 // ---------- SERVER ----------
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+

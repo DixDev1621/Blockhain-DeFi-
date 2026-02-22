@@ -15,6 +15,7 @@ def register():
     if not name or not email or not password:
         return jsonify({"message": "All fields required"}), 400
 
+    
     for u in users:
         if u["email"] == email:
             return jsonify({"message": "User already exists"}), 400
@@ -40,5 +41,6 @@ def login():
                 "token": "dummy-token",
                 "message": "Login successful"
             })
+
 
     return jsonify({"message": "Invalid credentials"}), 401
